@@ -48,12 +48,102 @@
             
             </div><!-- /.blurb -->
 		</div><!-- /.container -->
-		<footer>
+		
+</body>
+
+<h1>Ubuntu 16.04 下安装 Abaqus2016</h1>
+<body lang="zh-CN" dir="ltr">
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">安装依赖软件包</font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto; page-break-after: auto">
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">sudo
+apt-get install csh ksh libxm4 libjpeg62 libstdc++5 mesa-common-dev
+gfortran gcc g++ make build-essential lib32ncurses5</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">安装</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">Documentation</span></font></font></span></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="微软雅黑">启动</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">Server</span></font></font></span></font><font face="微软雅黑">之前，创建</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">libtermcap.so</span></font></font></span></font><font face="微软雅黑">的链接：</font></p>
+<p style="margin-left: 0.9cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">sudo
+ln -s /lib32/libncurses.so.5.9 /lib/libtermcap.so.2</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="微软雅黑">启动</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">Documentation
+Server</span></font></font></span></font><font face="微软雅黑">：</font></p>
+<p style="margin-left: 0.9cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">~/SIMULIA/Documentation/installation_info/v2016/startServer</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">设置</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">License
+Server</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">安装</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">Abaqus
+Solver</span></font></font></span></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="微软雅黑">注意将</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">./inst/common/init/Linux.sh</span></font></font></span></font><font face="微软雅黑">第</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">3</span></font></font></span></font><font face="微软雅黑">行：</font></p>
+<p style="margin-left: 0.9cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">DSY_OS_Release=`lsb_release
+--short --id |sed 's/ //g'`</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="微软雅黑">改为</font></p>
+<p style="margin-left: 0.9cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">DSY_OS_Release=&quot;CentOS&quot;</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
+<font face="Liberation Serif, serif"><span lang="en-US">*</span></font><font face="微软雅黑">以下各模块均需要进行此操作</font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">安装</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">Abaqus</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">安装</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">Tosca</span></font></font></span></font><font face="微软雅黑">及其它求解器</font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">添加系统环境变量</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">(~/.bashrc)</span></font></font></span></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto; page-break-after: auto">
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abaqus='XLIB_SKIP_ARGB_VISUALS=1 ~/SIMULIA/Abaqus/Commands/./abaqus'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlm='~/SIMULIA/license/./lmgrd -c ~/SIMULIA/license/ABAQUS.lic -l
++~/SIMULIA/license/ABAQUS.log'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqdocserver='~/SIMULIA/Documentation/installation_info/v2016/./startServer'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlmstat='sudo ~/SIMULIA/License/./lmstat'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlmdown='sudo ~/SIMULIA/License/./lmdown'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abaqus='sudo XLIB_SKIP_ARGB_VISUALS=1
+~/SIMULIA/Abaqus/Commands/./abaqus'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlm='sudo ~/SIMULIA/License/./lmgrd -c
+~/SIMULIA/License/abq6101.dat -l +~/SIMULIA/License/abaquslm.log'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqdocserver='sudo
+~/SIMULIA/Documentation/installation_info/v2016/./startServer'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlmstat='sudo ~/SIMULIA/License/./lmstat'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlmdown='sudo ~/SIMULIA/License/./lmdown'</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">解决界面透明的问题，以及显卡驱动崩溃的问题：</font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto; page-break-after: auto">
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">XLIB_SKIP_ARGB_VISUALS=1
+~/SIMULIA/Commands/./abaqus cae -mesa</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="微软雅黑">推荐使用下面的</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">shell
+script</span></font></font></span></font><font face="微软雅黑">启动</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="微软雅黑"><font size="3" style="font-size: 12pt"><span lang="en-US">Abaqus
+CAE</span></font></font></span></font><font face="微软雅黑">：</font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto; page-break-after: auto">
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">rm
+-rf /home/john/abaqus_2016.gpr #Remove GUI setting files from
+previous runs to avoid multi-windows.</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">cd
+~/SIMULIA/Temp #Set working directory</span></font></font></p>
+<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">XLIB_SKIP_ARGB_VISUALS=1
+~/SIMULIA/Commands/./abaqus cae -mesa</span></font></font></p>
+
+<footer>
     		<ul>
         		<li><a href="mailto:yhg14@mails.tsinghua.edu.cn">email</a></li>
         		<li><a href="https://github.com/HaoguangYang">github.com/HaoguangYang</a></li>
 			</ul>
 		</footer>
-	</body>
+
+</body>
 </html>
 
