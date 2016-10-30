@@ -1,93 +1,1068 @@
 ---
 layout: default
-title: Ubuntu 16.04 ‰∏ãÂÆâË£Ö Abaqus2016
----
+title: Ubuntu 16.04 œ¬∞≤◊∞ Abaqus2016
+--- 
+{{ page.title }}
 
-<h2>{{ page.title }}</h2>
+<style>
+@font-face{
+font-family:"Times New Roman";
+}
 
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">ÂÆâË£Ö‰æùËµñËΩØ‰ª∂ÂåÖ</font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto; page-break-after: auto">
-<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">sudo
-apt-get install csh ksh libxm4 libjpeg62 libstdc++5 mesa-common-dev
-gfortran gcc g++ make build-essential lib32ncurses5</span></font></font></p>
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">ÂÆâË£Ö</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">Documentation</span></font></font></span></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="ÂæÆËΩØÈõÖÈªë">ÂêØÂä®</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">Server</span></font></font></span></font><font face="ÂæÆËΩØÈõÖÈªë">‰πãÂâçÔºåÂàõÂª∫</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">libtermcap.so</span></font></font></span></font><font face="ÂæÆËΩØÈõÖÈªë">ÁöÑÈìæÊé•Ôºö</font></p>
-<p style="margin-left: 0.9cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">sudo
-ln -s /lib32/libncurses.so.5.9 /lib/libtermcap.so.2</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="ÂæÆËΩØÈõÖÈªë">ÂêØÂä®</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">Documentation
-Server</span></font></font></span></font><font face="ÂæÆËΩØÈõÖÈªë">Ôºö</font></p>
-<p style="margin-left: 0.9cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">~/SIMULIA/Documentation/installation_info/v2016/startServer</span></font></font></p>
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">ËÆæÁΩÆ</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">License
-Server</span></font></font></span></font></p>
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">ÂÆâË£Ö</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">Abaqus
-Solver</span></font></font></span></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="ÂæÆËΩØÈõÖÈªë">Ê≥®ÊÑèÂ∞Ü</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">./inst/common/init/Linux.sh</span></font></font></span></font><font face="ÂæÆËΩØÈõÖÈªë">Á¨¨</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">3</span></font></font></span></font><font face="ÂæÆËΩØÈõÖÈªë">Ë°åÔºö</font></p>
-<p style="margin-left: 0.9cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">DSY_OS_Release=`lsb_release
---short --id |sed 's/ //g'`</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="ÂæÆËΩØÈõÖÈªë">Êîπ‰∏∫</font></p>
-<p style="margin-left: 0.9cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">DSY_OS_Release=&quot;CentOS&quot;</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto">
-<font face="Liberation Serif, serif"><span lang="en-US">*</span></font><font face="ÂæÆËΩØÈõÖÈªë">‰ª•‰∏ãÂêÑÊ®°ÂùóÂùáÈúÄË¶ÅËøõË°åÊ≠§Êìç‰Ωú</font></p>
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">ÂÆâË£Ö</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">Abaqus</span></font></font></span></font></p>
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">ÂÆâË£Ö</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">Tosca</span></font></font></span></font><font face="ÂæÆËΩØÈõÖÈªë">ÂèäÂÖ∂ÂÆÉÊ±ÇËß£Âô®</font></p>
-<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+@font-face{
+font-family:"ÀŒÃÂ";
+}
 
-</p>
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">Ê∑ªÂä†Á≥ªÁªüÁéØÂ¢ÉÂèòÈáè</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">(~/.bashrc)</span></font></font></span></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto; page-break-after: auto">
-<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abaqus='XLIB_SKIP_ARGB_VISUALS=1 ~/SIMULIA/Abaqus/Commands/./abaqus'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abqlm='~/SIMULIA/license/./lmgrd -c ~/SIMULIA/license/ABAQUS.lic -l
-+~/SIMULIA/license/ABAQUS.log'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abqdocserver='~/SIMULIA/Documentation/installation_info/v2016/./startServer'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abqlmstat='sudo ~/SIMULIA/License/./lmstat'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abqlmdown='sudo ~/SIMULIA/License/./lmdown'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abaqus='sudo XLIB_SKIP_ARGB_VISUALS=1
-~/SIMULIA/Abaqus/Commands/./abaqus'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abqlm='sudo ~/SIMULIA/License/./lmgrd -c
-~/SIMULIA/License/abq6101.dat -l +~/SIMULIA/License/abaquslm.log'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abqdocserver='sudo
-~/SIMULIA/Documentation/installation_info/v2016/./startServer'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abqlmstat='sudo ~/SIMULIA/License/./lmstat'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
-abqlmdown='sudo ~/SIMULIA/License/./lmdown'</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><br/>
+@font-face{
+font-family:"DejaVu Sans";
+}
 
-</p>
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">Ëß£ÂÜ≥ÁïåÈù¢ÈÄèÊòéÁöÑÈóÆÈ¢òÔºå‰ª•ÂèäÊòæÂç°È©±Âä®Â¥©Ê∫ÉÁöÑÈóÆÈ¢òÔºö</font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto; page-break-after: auto">
-<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">XLIB_SKIP_ARGB_VISUALS=1
-~/SIMULIA/Commands/./abaqus cae -mesa</span></font></font></p>
-<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+@font-face{
+font-family:"Œ¢»Ì—≈∫⁄";
+}
 
-</p>
-<p style="margin-bottom: 0cm; line-height: 100%"><font face="ÂæÆËΩØÈõÖÈªë">Êé®Ëçê‰ΩøÁî®‰∏ãÈù¢ÁöÑ</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">shell
-script</span></font></font></span></font><font face="ÂæÆËΩØÈõÖÈªë">ÂêØÂä®</font><font face="Liberation Serif, serif"><span lang="en-US"><font face="ÂæÆËΩØÈõÖÈªë"><font size="3" style="font-size: 12pt"><span lang="en-US">Abaqus
-CAE</span></font></font></span></font><font face="ÂæÆËΩØÈõÖÈªë">Ôºö</font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%; page-break-before: auto; page-break-after: auto">
-<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">rm
--rf /home/john/abaqus_2016.gpr #Remove GUI setting files from
-previous runs to avoid multi-windows.</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">cd
-~/SIMULIA/Temp #Set working directory</span></font></font></p>
-<p style="margin-left: 0.4cm; margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">XLIB_SKIP_ARGB_VISUALS=1
-~/SIMULIA/Commands/./abaqus cae -mesa</span></font></font></p>
-<p></a></p>
+@font-face{
+font-family:"Ubuntu Mono";
+}
 
-<p>{{ page.date | date_to_string }}</p>
+@font-face{
+font-family:"Liberation Serif";
+}
+
+@list l0:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l1:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l2:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l3:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l4:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l5:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l6:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l7:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l8:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l9:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l10:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l11:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l11:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l11:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l11:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l11:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l11:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l11:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l11:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l11:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l12:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l13:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l13:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l13:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l13:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l13:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l13:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l13:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l13:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l13:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l14:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l14:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l14:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l14:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l14:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l14:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l14:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l14:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l14:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l15:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l16:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l16:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l16:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l16:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l16:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l16:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l16:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l16:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l16:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l17:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt;text-indent:-18.0000pt;font-family:'DejaVu Sans';}
+
+@list l17:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l17:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l17:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l17:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l17:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l17:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l17:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l17:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l18:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+@list l19:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';}
+
+p.MsoNormal{
+mso-style-name:’˝Œƒ;
+mso-style-noshow:yes;
+mso-style-parent:"";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-size:12.0000pt;
+}
+
+span.10{
+font-family:'Times New Roman';
+}
+
+span.15{
+font-family:'Times New Roman';
+}
+
+p.NewStyle16{
+mso-style-name:"h5 Char Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:10.0000pt;
+}
+
+p.NewStyle17{
+mso-style-name:"p Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-size:12.0000pt;
+}
+
+p.NewStyle18{
+mso-style-name:"h4 Char Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:12.0000pt;
+}
+
+p.NewStyle19{
+mso-style-name:"h5 Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:10.0000pt;
+}
+
+p.NewStyle20{
+mso-style-name:"h6 Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:7.5000pt;
+}
+
+p.NewStyle21{
+mso-style-name:"h3 Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:13.5000pt;
+}
+
+p.NewStyle22{
+mso-style-name:"h6 Char Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:7.5000pt;
+}
+
+p.NewStyle23{
+mso-style-name:"±ÍÃ‚ 1 Char";
+mso-style-next:’˝Œƒ;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:24.0000pt;
+mso-font-kerning:22.0000pt;
+}
+
+p.NewStyle24{
+mso-style-name:"pre Char";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-size:12.0000pt;
+}
+
+p.NewStyle25{
+mso-style-name:"h4 Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:12.0000pt;
+}
+
+p.NewStyle26{
+mso-style-name:"pre Char Char";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-size:12.0000pt;
+}
+
+p.NewStyle27{
+mso-style-name:"h2 Char";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:ÀŒÃÂ;
+font-weight:bold;
+font-size:18.0000pt;
+}
+
+span.msoIns{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:underline;
+text-underline:single;
+color:blue;
+}
+
+span.msoDel{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:line-through;
+color:red;
+}
+
+table.MsoNormalTable{
+mso-style-name:∆’Õ®±Ì∏Ò;
+mso-style-parent:"";
+mso-style-noshow:yes;
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-family:'Times New Roman';
+font-size:10.0000pt;
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;
+}
+
+table.NewStyle28{
+mso-style-name:"∆’Õ®±Ì∏Ò Char";
+mso-style-noshow:yes;
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-family:'Times New Roman';
+font-size:10.0000pt;
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;
+}
+@page{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}@page Section0{
+size:595.3500pt 841.9500pt;
+}
+div.Section0{page:Section0;}</style></head><body style="tab-interval:21pt;" ><!--StartFragment--><div class="Section0" ><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >∞≤◊∞“¿¿µ»Ìº˛∞¸</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >sudo&nbsp;apt-get&nbsp;install&nbsp;csh&nbsp;ksh&nbsp;libxm4&nbsp;libjpeg62&nbsp;libstdc++5&nbsp;mesa-common-dev&nbsp;gfortran&nbsp;gcc&nbsp;g++&nbsp;make&nbsp;build-essential&nbsp;lib32ncurses5</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >∞≤◊∞Documentation</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >∆Ù∂ØServer÷Æ«∞£¨¥¥Ω®libtermcap.soµƒ¡¥Ω”£∫</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:25.5500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >sudo&nbsp;ln&nbsp;-s&nbsp;/lib32/libncurses.so.5.9&nbsp;/lib/libtermcap.so.2</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >∆Ù∂ØDocumentation&nbsp;Server£∫</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:25.5500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >~/SIMULIA/Documentation/installation_info/v2016/startServer</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >…Ë÷√License&nbsp;Server</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >∞≤◊∞Abaqus&nbsp;Solver</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >◊¢“‚Ω´./inst/common/init/Linux.shµ⁄3––£∫</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:25.5500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >DSY_OS_Release=`lsb_release&nbsp;--short&nbsp;--id&nbsp;|sed&nbsp;'s/&nbsp;//g'`</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >∏ƒŒ™</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:25.5500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >DSY_OS_Release="CentOS"</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Liberation Serif';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >*</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >“‘œ¬∏˜ƒ£øÈæ˘–Ë“™Ω¯––¥À≤Ÿ◊˜</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >∞≤◊∞Abaqus</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >∞≤◊∞Toscaº∞∆‰À¸«ÛΩ‚∆˜</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >ÃÌº”œµÕ≥ª∑æ≥±‰¡ø(~/.bashrc)</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abaqus='XLIB_SKIP_ARGB_VISUALS=1&nbsp;~/SIMULIA/Abaqus/Commands/./abaqus'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abqlm='~/SIMULIA/license/./lmgrd&nbsp;-c&nbsp;~/SIMULIA/license/ABAQUS.lic&nbsp;-l&nbsp;+~/SIMULIA/license/ABAQUS.log'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abqdocserver='~/SIMULIA/Documentation/installation_info/v2016/./startServer'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abqlmstat='sudo&nbsp;~/SIMULIA/License/./lmstat'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abqlmdown='sudo&nbsp;~/SIMULIA/License/./lmdown'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abaqus='sudo&nbsp;XLIB_SKIP_ARGB_VISUALS=1&nbsp;~/SIMULIA/Abaqus/Commands/./abaqus'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abqlm='sudo&nbsp;~/SIMULIA/License/./lmgrd&nbsp;-c&nbsp;~/SIMULIA/License/abq6101.dat&nbsp;-l&nbsp;+~/SIMULIA/License/abaquslm.log'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abqdocserver='sudo&nbsp;~/SIMULIA/Documentation/installation_info/v2016/./startServer'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abqlmstat='sudo&nbsp;~/SIMULIA/License/./lmstat'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >alias&nbsp;abqlmdown='sudo&nbsp;~/SIMULIA/License/./lmdown'</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >Ω‚æˆΩÁ√ÊÕ∏√˜µƒŒ Ã‚£¨“‘º∞œ‘ø®«˝∂Ø±¿¿£µƒŒ Ã‚£∫</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >XLIB_SKIP_ARGB_VISUALS=1&nbsp;~/SIMULIA/Commands/./abaqus&nbsp;cae&nbsp;-mesa</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >Õ∆ºˆ π”√œ¬√Êµƒshell&nbsp;script∆Ù∂ØAbaqus&nbsp;CAE£∫</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >rm&nbsp;-rf&nbsp;/home/john/abaqus_2016.gpr&nbsp;#Remove&nbsp;GUI&nbsp;setting&nbsp;files&nbsp;from&nbsp;previous&nbsp;runs&nbsp;to&nbsp;avoid&nbsp;multi-windows.</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >cd&nbsp;~/SIMULIA/Temp&nbsp;#Set&nbsp;working&nbsp;directory</span><span style="mso-spacerun:'yes';font-family:ÀŒÃÂ;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >XLIB_SKIP_ARGB_VISUALS=1&nbsp;~/SIMULIA/Commands/./abaqus&nbsp;cae&nbsp;-mesa</span><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:11.3500pt;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;</span><span style="mso-spacerun:'yes';font-family:'Ubuntu Mono';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;margin-left:0.0000pt;mso-para-margin-left:0.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >»‘»ª¥Ê‘⁄µƒŒ Ã‚£∫</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-para-margin-left:1.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >–Ì∂‡Œ Ã‚”…¬∑æ∂≤ª∂‘“˝∆°£»Á£∫</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-para-margin-left:1.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >Ubuntu16.04&nbsp;œ¬≤ªƒ‹÷±Ω”Ω´Job‘⁄CAE÷–Ã·Ωª«ÛΩ‚°£–Ë π”√√¸¡Ó––£∫</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-para-margin-left:2.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >abaqus&nbsp;job=...&nbsp;cpus=...&nbsp;Interactive</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-para-margin-left:1.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >Ã·Ωª«ÛΩ‚°£</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-para-margin-left:1.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >Õ¨ ±£¨Abaqus&nbsp;Tosca&nbsp;Õÿ∆À”≈ªØƒ£øÈ»‘Œﬁ∑® π”√£¨≥Ã–Úª·Ã· æERROR:&nbsp;Memory&nbsp;allocation&nbsp;attempt&nbsp;before&nbsp;component&nbsp;initialization£¨∑µªÿ¥ÌŒÛ¥˙¬Î134°£</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-para-margin-left:1.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >µ•∂¿‘À––≥ˆœ÷Œ Ã‚µƒSMATsoToscaPrep£¨Ã· æ£∫</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-para-margin-left:1.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >./Tosca/2016.HF2/linux_a64/code/bin/SMATsoToscaPrep:&nbsp;error&nbsp;while&nbsp;loading&nbsp;shared&nbsp;libraries:&nbsp;libJS0GROUP.so:&nbsp;cannot&nbsp;open&nbsp;shared&nbsp;object&nbsp;file:&nbsp;No&nbsp;such&nbsp;file&nbsp;or&nbsp;directory</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=NewStyle17  style="margin-bottom:0.0000pt;mso-para-margin-left:1.0000gd;mso-pagination:widow-orphan;" ><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >»ª∂¯libJS0GROUP.so‘⁄ƒø¬º./Tosca/2016.HF2/linux_a64/code/bin/œ¬¥Ê‘⁄°£ƒø«∞…–Œ¥’“µΩΩ‚æˆ∑Ω∞∏°£</span><span style="mso-spacerun:'yes';font-family:Œ¢»Ì—≈∫⁄;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></div><!--EndFragment--></body>
+{{ page.date | date_to_string }}
