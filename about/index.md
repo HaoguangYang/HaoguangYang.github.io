@@ -4,7 +4,7 @@ type: page
 title: About me
 ---
 
- * **Name:** 姚奕涛
- * **Email:** [simpleyyt@gmail.com](mailto:simpleyyt@gmail.com)
- * **WeiBo:** [摇一摇SimpleLife](http://www.weibo.com/u/1836017133)
- * **Github:** [Simpleyyt](https://github.com/Simpleyyt)
+ * **Name:** 杨昊光
+ * **Email:** [yhg14@mails.tsinghua.edu.cn](mailto:yhg14@mails.tsinghua.edu.cn)
+ * **WeiBo:** [THU-John](http://weibo.com/u/3625588332)
+ * **Github:** [HaoguangYang](https://github.com/HaoguangYang)
