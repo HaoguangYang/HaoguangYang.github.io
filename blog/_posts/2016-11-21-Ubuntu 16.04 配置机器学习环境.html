@@ -1,0 +1,285 @@
+---
+layout: default
+title: Ubuntu 16.04 配置机器学习环境
+---
+<h2>{{ page.title }}</h2>
+<h3 class="cjk">机器配置</h3>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="30*">
+	<col width="226*">
+	<tr>
+		<td width="12%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center">项目</p>
+		</td>
+		<td width="88%" style="border: 1px solid #000000; padding: 0.1cm">
+			<p align="center">值</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="12%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center">处理器</p>
+		</td>
+		<td width="88%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p align="center"><a name="magicparlabel-220"></a><font face="Liberation Serif, serif"><span lang="en-US">Intel®
+			Xeon(R) CPU E3-1245 v5 @ 3.50GHz, 3.90GHz Max × 4 Cores, 8
+			Threads</span></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="12%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center"><font face="Liberation Sans, sans-serif"><span lang="en-US">RAM</span></font></p>
+		</td>
+		<td width="88%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p align="center"><a name="magicparlabel-228"></a><font face="Liberation Serif, serif"><span lang="en-US">32.0
+			GiB DDR4 </span></font>双通道</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="12%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center"><font face="Liberation Sans, sans-serif"><span lang="en-US">GPU</span></font></p>
+		</td>
+		<td width="88%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p align="center"><font face="Liberation Serif, serif"><span lang="en-US">NVidia
+			GeForce GTX TITAN X /PCIe/SSE2; Intel HD Graphics P530</span></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="12%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center">操作系统</p>
+		</td>
+		<td width="88%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p align="center"><a name="magicparlabel-244"></a><font face="Liberation Serif, serif"><span lang="en-US">Ubuntu
+			16.04.1 LTS amd64</span></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="12%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center">硬盘</p>
+		</td>
+		<td width="88%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p align="center"><a name="magicparlabel-316"></a><font face="Liberation Serif, serif"><span lang="en-US">256
+			GiB </span></font>操作系统盘，<font face="Liberation Serif, serif"><span lang="en-US">2
+			TB </span></font>数据盘</p>
+		</td>
+	</tr>
+</table>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="cjk"><meta name="created" content="2016-11-23T18:36:29.922040359"><meta name="changed" content="2016-11-23T20:08:33.080240339"><font face="Liberation Sans, sans-serif"><span lang="en-US">1.
+Install NVidia Drivers</span></font></h3>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo add-apt-repository ppa:graphics-drivers/ppa</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+Press Enter to Continue</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo apt-get update</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo apt-get install nvidia-367<br/>
+$ sudo apt-get install
+mesa-common-dev<br/>
+$ sudo apt-get install freeglut3-dev</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span lang="en-US"><font face="Ubuntu Mono">$
+sudo reboot</font></span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h3 class="cjk"><font face="Liberation Sans, sans-serif"><span lang="en-US">2.
+Download and Install CUDA 8.0</span></font></h3>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo sh cuda_your_version_linux.run –tmpdir=/tmp/</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+Do NOT install default drivers</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+When finished, add these lines to ~/.bashrc:</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}<br/>
+# export
+LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+To check if CUDA and NVidia driver are running correctly, run:</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+nvidia-smi</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h3 class="cjk"><font face="Liberation Sans, sans-serif"><span lang="en-US">3.
+Download and Install CUDNN</span></font></h3>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+tar xvzf cudnn-your_version-prod.tgz</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include </span></font></font>
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64 </span></font></font>
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo chmod a+r /usr/local/cuda/include/cudnn.h
+/usr/local/cuda/lib64/libcudnn*</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h3 class="cjk"><font face="Liberation Sans, sans-serif"><span lang="en-US">4.
+Download and Install TensorFlow</span></font></h3>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+install Bazel:</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo apt-get install python-numpy swig python-dev python-wheel​​</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Serif, serif"><span lang="en-US"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+refer to <a href="http://www.bazel.io/docs/install.html">http://www.bazel.io/docs/install.html</a></span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+Check that this line is added to ~/.bashrc:</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+export PATH=&quot;$PATH:$HOME/bin&quot;​</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">​<font face="Liberation Serif, serif"><span lang="en-US"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+</span></font></font><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span lang="en-US">​</span></font></font><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">git
+clone <a href="https://github.com/tensorflow/tensorflow">https://github.com/tensorflow/tensorflow</a>​</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+cd tensorflow</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+./configure</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+Making tests:</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+bazel build -c opt --config=cuda
+//tensorflow/cc:tutorials_example_trainer</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+if error occurs, run alternatively:</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+$ bazel build -c opt --config=cuda
+//tensorflow/cc:tutorials_example_trainer​ --verbose_failures</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+and then:</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+bazel-bin/tensorflow/cc/tutorials_example_trainer –use_gpu​</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+should output the eigen values of a 2x2 matrix and it should
+converge.</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+Build pip installer and install:</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+bazel build -c opt --config=cuda
+//tensorflow/tools/pip_package:build_pip_package</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+bazel-bin/tensorflow/tools/pip_package/build_pip_package
+/tmp/tensorflow_pkg​</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$
+sudo pip install
+/tmp/tensorflow_pkg/tensorflow-0.9.0-py2-none-any.whl</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h3 class="cjk"><font face="Liberation Sans, sans-serif"><span lang="en-US">5.
+Install Torch</span></font></h3>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#
+This will automatically install OpenBLAS at /opt/OpenBLAS.</span></font></font></p>
+<pre class="cjk"><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ git clone https://github.com/torch/distro.git ~/torch --recursive</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ cd ~/torch; bash install-deps;</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ ./install.sh</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       Add these lines to ~/.bashrc</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">        </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">export OPENBLAS_NUM_THREADS=8</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">        </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">export OMP_NUM_THREADS=8</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">        </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">export LD_LIBRARY_PATH=/opt/OpenBLAS/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       to test Torch, run</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ th</span></font></font></code></span></font>
+
+<code class="cjk">  </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">______             __   |  Torch7                                   </span></font></font></code></span></font>
+<code class="cjk"> </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">/_  __/__  ________/ /   |  Scientific computing for Lua.         </span></font></font></code></span></font>
+<code class="cjk">  </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">/ / / _ \/ __/ __/ _ \  |                                           </span></font></font></code></span></font>
+<code class="cjk"> </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">/_/  \___/_/  \__/_//_/  |  https://github.com/torch   </span></font></font></code></span></font>
+<code class="cjk">                          </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">|  http://torch.ch            </span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">th&gt; torch.Tensor{1,2,3}</span></font></font></code></span></font>
+<code class="cjk"> </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">1</span></font></font></code></span></font>
+<code class="cjk"> </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">2</span></font></font></code></span></font>
+<code class="cjk"> </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">3</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">[torch.DoubleTensor of dimension 3]</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">th&gt;</span></font></font></code></span></font></pre><h3 class="cjk">
+<font face="Liberation Sans, sans-serif"><span lang="en-US"><code class="western"><font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 14pt"><span lang="en-US">6.
+Download and Install OpenCV3.1.0</span></font></font></code></span></font></h3>
+<pre class="cjk"><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo apt-get install qt5-default cmake-qt-gui build-essential libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ git clone <a href="https://github.com/opencv/opencv.git">https://github.com/opencv/opencv.git</a></span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ cd opencv; mkdir build; cd build </span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       Generate</span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US"> </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">OpenCV makefile with</span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US"> </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">using Cmake GUI, enable CUDA, CuDNN, TBB, Qt,OpenCL, OpenGL, OpenBLAS, and other necessary dependencies</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">or use the terminal:</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D ENABLE_FAST_MATH=1 -D CUDA_FAST_MATH=1 -D WITH_CUBLAS=1 ..</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ make -j16</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo make install</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       (Optional) Configure the library search path</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       Create the file /etc/ld.so.conf.d/opencv.conf and add the following line.</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">    </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">/usr/local/lib</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       Add the following line to the ~/.bashrc file</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">    </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       Reload the bashrc file for the current session</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       $ source ~/.bashrc</span></font></font></code></span></font></pre><h3 class="cjk">
+<font face="Liberation Sans, sans-serif"><span lang="en-US"><code class="western"><font face="LiberationSans, sans-serif"><span lang="en-US">7.
+Install Caffe</span></font></code></span></font></h3>
+<pre class="cjk"><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       (For Debian and Ubuntu users)The lib names of hdf5 on debian have a postfix &quot;serial&quot;, therefore -lhdf5</span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US"> </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">and -lhdf5_hl</span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US"> </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">cannot be found.</span></font></font></code></span></font></pre><p>
+<font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span lang="en-US"><font face="Ubuntu Mono">#
+To solve it, I created two symbolics:</font></span></font></font></p>
+<pre class="cjk"><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ cd /usr/lib/x86_64-linux-gnu</span></font></font></code></span></font>
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo ln -s libhdf5_serial.so.8.0.2 libhdf5.so</span></font></font>
+<font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo ln -s libhdf5_serial_hl.so.8.0.2 libhdf5_hl.so</span></font></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ git clone https://github.com/NVIDIA/caffe.git $CAFFE_ROOT</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       Modify the Makefile.config as stated below:</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       6       USE_CUDNN := 1</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       27      OPENCV_VERSION := 3</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       54      BLAS := open</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       58      BLAS_INCLUDE := /opt/OpenBLAS/include</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       59      BLAS_LIB := /opt/OpenBLAS/lib</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       68      MATLAB_DIR := /opt/MATLAB/R2016a</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       87      PYTHON_LIB := /usr/lib</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       95      WITH_PYTHON_LAYER := 1</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       98      INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       99      LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ make clean</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ protoc src/caffe/proto/caffe.proto –cpp_out=.</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ mkdir include/caffe/proto</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ mv src/caffe/proto/caffe.pb.h include/caffe/proto</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo pip install -r $CAFFE_ROOT/python/requirements.txt</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ make -j16; make test -j16; make runtest; make pycaffe; make distribute</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       Add the following lines to ~/.bashrc:</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">        </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">export LD_LIBRARY_PATH=/usr/local/caffe/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">        </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">export PYTHONPATH=/usr/local/caffe/python:$PYTHONPATH</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">        </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">export CAFFE_HOME=/usr/local/caffe</span></font></font></code></span></font></pre><h3 class="cjk">
+<font face="Liberation Sans, sans-serif"><span lang="en-US"><code class="western"><font face="Liberation Sans, sans-serif"><span lang="en-US">8.
+Install Digits</span></font></code></span></font></h3>
+<pre class="cjk"><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       Add these</span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US"> </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">line to ~/.bashrc</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">        </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">export DIGITS_ROOT=/usr/local/digits</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#       </span></font></font></code><code class="western"><font face="Liberation Mono, monospace"><span lang="en-US">        </span></font></code><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias digits_server_start=/usr/local/digits/digits-devserver</span></font></font></code></span></font>
+
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ source ~/.bashrc</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo mkdir /usr/local/digits; sudo chmod 777 /usr/local/digits</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo apt-get install --no-install-recommends git graphviz python-dev python-flask python-flaskext.wtf python-gevent python-h5py python-numpy python-pil python-pip python-protobuf python-scipy</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ git clone <a href="https://github.com/NVIDIA/DIGITS.git">https://github.com/NVIDIA/DIGITS.git</a> $DIGITS_ROOT</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo pip install -r $DIGITS_ROOT/requirements.txt</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ sudo pip install -e $DIGITS_ROOT</span></font></font></code></span></font>
+<font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">$ digits_server_start</span></font></font></code></span></font>
+<code class="cjk">  </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">___ ___ ___ ___ _____ ___</span></font></font></code></span></font>
+<code class="cjk"> </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">|   \_ _/ __|_ _|_   _/ __|</span></font></font></code></span></font>
+<code class="cjk"> </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">| |) | | (_ || |  | | \__ \</span></font></font></code></span></font>
+<code class="cjk"> </code><font face="Liberation Mono, monospace"><span lang="en-US"><code class="western"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">|___/___\___|___| |_| |___/ 5.1-dev</span></font></font></code></span></font></pre>
+<p>{{ page.date | date_to_string }}</p>

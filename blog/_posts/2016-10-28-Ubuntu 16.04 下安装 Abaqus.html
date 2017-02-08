@@ -1,0 +1,138 @@
+---
+layout: default
+title: Ubuntu 16.04 下安装 Abaqus v6.14-4 或 v2016
+---
+<h2>{{ page.title }}</h2>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; orphans: 2; widows: 2">
+<span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">安装依赖软件包</span></span></font></font></span></font></span></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">sudo
+apt-get install csh ksh libxm4 libjpeg62 libstdc++5 mesa-common-dev
+gfortran gcc g++ make build-essential lib32ncurses5</span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">假设</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span lang="en-US">Abaqus</span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">安装母目录为
+</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span lang="en-US">/opt/SIMULIA</span></font></font></span></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">安装</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Documentation</span></span></span></font></font></span></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">启动</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Server</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">之前，创建</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">libtermcap.so</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">的链接：</span></span></font></font></font></p>
+<p align="left" style="margin-left: 0.9cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">sudo
+ln -s /lib32/libncurses.so.5.9 /lib/libtermcap.so.2</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">启动</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Documentation
+Server</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">：</span></span></font></font></font></p>
+<p align="left" style="margin-left: 0.9cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">/opt/SIMULIA/Documentation/installation_info/v2016/startServer</span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">设置</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">License
+Server</span></span></span></font></font></span></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; orphans: 2; widows: 2">
+<span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">对
+</span></span></font></font></span></font></span><font face="Liberation Serif, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#000000"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span lang="en-US">Abaqus
+v2016</span></span></font></font></font></span></span></font></p>
+<ul>
+	<li/>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; orphans: 2; widows: 2">
+	<span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">安装</span></span></font></font></span></font></span><font face="Liberation Serif, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Abaqus
+	Solver</span></span></span></span></font></font></font></span></span></font></p>
+</ul>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">注意将</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">./inst/common/init/Linux.sh</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">第</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">3</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">行：</span></span></font></font></font></p>
+<p align="left" style="margin-left: 0.9cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">DSY_OS_Release=`lsb_release
+--short --id |sed 's/ //g'`</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">改为</font></font></font></p>
+<p align="left" style="margin-left: 0.9cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">DSY_OS_Release=&quot;CentOS&quot;</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; orphans: 2; widows: 2">
+<font face="Liberation Serif, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#000000"><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">*</span></span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">以下各模块均需要进行此操作</span></span></font></font></span></font></span></p>
+<ul>
+	<li/>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; orphans: 2; widows: 2">
+	<span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">安装</span></span></font></font></span></font></span><font face="Liberation Serif, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Abaqus</span></span></span></span></font></font></font></span></span></font></p>
+	<li/>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">安装</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Tosca</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">及其它求解器</span></span></font></font></font></p>
+</ul>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">对</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Abaqus
+v6.14-4</span></span></span></font></font></span></font></font></p>
+<ul>
+	<li/>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+	<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">只需安装</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Abaqus</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">，所有模块都已集成在一个安装程序中。</span></span></font></font></font></p>
+</ul>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">添加系统环境变量</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">(~/.bashrc)</span></span></span></font></font></span></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abaqus='XLIB_SKIP_ARGB_VISUALS=1
+/opt/SIMULIA/Abaqus/Commands/./abaqus'</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlm='/opt/SIMULIA/license/./lmgrd -c
+/opt/SIMULIA/license/ABAQUS.lic'</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqdocserver='/opt/SIMULIA/Documentation/installation_info/v2016/./startServer'</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlmstat='/opt/SIMULIA/License/./lmstat'</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abqlmdown='/opt/SIMULIA/License/./lmdown'</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">alias
+abaqus='XLIB_SKIP_ARGB_VISUALS=1 ~/SIMULIA/Abaqus/Commands/./abaqus'</span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; orphans: 2; widows: 2">
+<br/>
+
+</p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">推荐使用下面的</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">shell
+script</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">启动</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Abaqus
+CAE</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">：</span></span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">rm
+-rf ~/abaqus_2016.gpr #Remove GUI setting files from previous runs to
+avoid multi-windows issue.</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">cd
+/opt/SIMULIA/Temp #Set working directory</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">XLIB_SKIP_ARGB_VISUALS=1
+/opt/SIMULIA/Commands/./abaqus cae -mesa</span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Liberation Serif, serif"><span lang="en-US"><font face="Ubuntu Mono"><font size="3" style="font-size: 12pt"><span lang="en-US">#</span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">解决界面透明的问题，以及显卡驱动崩溃的问题</span></span></font></font></font></p>
+<p align="left" style="margin-left: 0.4cm; margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">按需要添加启动链接到桌面。</font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">配置完成后，</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">v6.14-4</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">运行良好。</span></span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Liberation Serif, serif"><span lang="en-US"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">v2016</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">版仍然存在兼容性问题：</span></span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">许多问题由路径不对引起。如：</font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Ubuntu16.04
+</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">下不能直接将</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Job</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">在</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">CAE</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">中提交求解。需使用命令行：</span></span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US">abaqus
+job=... cpus=... Interactive</span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">提交求解。</font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">同时，</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">Abaqus
+Tosca </span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">拓扑优化模块仍无法使用，程序会提示</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">ERROR:
+Memory allocation attempt before component initialization</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">，返回错误代码</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">134</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">。</span></span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">单独运行出现问题的</span></span></font></font><font face="Liberation Serif, serif"><span lang="en-US"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">SMATsoToscaPrep</span></span></span></font></font></span></font><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">，提示：</span></span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; orphans: 2; widows: 2">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US">./Tosca/2016.HF2/linux_a64/code/bin/SMATsoToscaPrep:
+error while loading shared libraries: libJS0GROUP.so: cannot open
+shared object file: No such file or directory</span></font></font></font></p>
+<p align="left" style="margin-top: 0.18cm; margin-bottom: 0cm; orphans: 2; widows: 2">
+<span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">然而</span></span></font></font></span></font></span><font face="Liberation Serif, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">libJS0GROUP.so</span></span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">在目录</span></span></font></font></span></font></span><font face="Liberation Serif, serif"><span lang="en-US"><span style="font-variant: normal"><font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span lang="en-US"><span style="font-style: normal"><span style="font-weight: normal">./Tosca/2016.HF2/linux_a64/code/bin/</span></span></span></span></font></font></font></span></span></font><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-style: normal"><span style="font-weight: normal">下存在。目前尚未找到解决方案。</span></span></font></font></span></font></span></p>
+
+<p>{{ page.date | date_to_string }}</p>
