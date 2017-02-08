@@ -8,17 +8,17 @@ permalink: /:year/:month/:day/:title
 
 #### Markdown Processors
 ##### Code Highlighter
-highlighter: pygments
-markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
+highlighter: rouge
+markdown: kramdown
 kramdown:
-  input:         GFM
-  auto_ids:      true
-  auto_id_prefix:'id-'
-  # footnote_nr:   1
-  # entity_output: as_char
-  # toc_levels:    1..6
-  # smart_quotes:  lsquo,rsquo,ldquo,rdquo
-  # use_coderay:   true
+  extensions:
+     - hard_wrap
+     - no_intra_emphasis
+     - autolink
+     - strikethrough
+     - tables
+     - lax_spacing
+     - with_toc_data
 
 #### Default Attributes
 defaults:
