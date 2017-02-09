@@ -37,7 +37,7 @@ paginate: 10
 
 #### Site
 title : John's Online Studio
-tagline: A portfolio for myself.
+tagline: Make Sparkling Ideas Work.
 assets: /assets
 baseurl:
 
@@ -95,7 +95,7 @@ author:
   intro_line1:  "Dept. of Engineering Mechanics, Tsien Excellence in Education Program (TEEP)"    ## your introduction on the bottom of the page
   intro_line2:  "Tsinghua University"  ## the 2nd line
   weibo: 3625588332      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
-  weibo_verifier: 8266a57e  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
+  weibo_verifier:   ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina: 3625588332      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban:      ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   zhihu:       ## e.g. jark  for http://www.zhihu.com/people/jark
