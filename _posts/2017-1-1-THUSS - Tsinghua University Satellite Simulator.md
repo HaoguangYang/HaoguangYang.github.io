@@ -19,7 +19,7 @@ THUSS systems are featured to proide a simple, reliable and open platform for re
 
 I would also like to thank our hardware customers hereby, including York University and Shanghai Jiao Tong University, for their warm welcomes during our arrival for delivery and/or tuning. As the technolgical core of the team I also appriciate all the efforts you teammates paid in the past two years. Job well done.
 
-![THUSS Team](https://raw.githubusercontent.com/HaoguangYang/HaoguangYang.github.io/assets/media/THUSS-team.JPG)
+![THUSS Team](https://raw.githubusercontent.com/HaoguangYang/HaoguangYang.github.io/master/assets/media/THUSS-team.JPG)
 
 ## Publications
 
