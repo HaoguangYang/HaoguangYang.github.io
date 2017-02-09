@@ -42,7 +42,7 @@ assets: /assets
 baseurl:
 
 #### Language
-language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
+##language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
 
 #### Menu
 menu:
