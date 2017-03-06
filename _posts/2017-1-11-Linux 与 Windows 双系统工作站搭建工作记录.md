@@ -23,18 +23,31 @@ published: true
 |硬盘|256 GiB 操作系统盘，3000 GiB HDD × 2|
 
 * /dev/sda:
+
  /dev/sda1	500MB NTFS, Windows Boot
+
  /dev/sda2	138500MB NTFS, Windows
+
  /dev/sda3	100000MB Ext4. Linux /
+
 * /dev/sdb:
+
  /dev/sdb1	350000MB NTFS, WindowsUsers
+
  /dev/sdb2	2000MB Swap, Linux Swap
+
  /dev/sdb3	50000MB Ext4, Linux /tmp
+
  /dev/sdb4	450000MB Ext4, Linux /home
+
  /dev/sdb5	1000000MB NTFS. Software
+
  /dev/sdb6	1000000MB NTFS, Developer
+
 * /dev/sdc:
+
  /dev/sdc1	1400000MB NTFS, Data
+
  /dev/sdc2	1450000MB Ext4, Backup
 
 ## 安装双系统
