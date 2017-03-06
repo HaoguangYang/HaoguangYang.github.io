@@ -10,7 +10,7 @@ title: About me
  
 ### Bio
  
- ||Timeline|
+ |Date|Timeline|
  |---|---|
  |2014.9| Entered Tsinghua University as undergraduate student, enrolled TEEP (Tsien Excellence in Education Program)|
  |2014.12| Joined Microsat Group as one of the initiators and started designing of the [Tsinghua University Satellite Simulator (THUSS)](https://haoguangyang.github.io/2016/09/01/THUSS-Tsinghua-University-Satellite-Simulator)|
