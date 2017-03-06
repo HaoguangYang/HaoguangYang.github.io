@@ -8,8 +8,10 @@ title: About me
  * **Email:** [yhg14@mails.tsinghua.edu.cn](mailto:yhg14@mails.tsinghua.edu.cn)
  * **Github:** [HaoguangYang](https://github.com/HaoguangYang)
  
- ### Bio
+### Bio
  
+ ||Timeline|
+ |---|---|
  |2014.9| Entered Tsinghua University as undergraduate student, enrolled TEEP (Tsien Excellence in Education Program)|
  |2014.12| Joined Microsat Group as one of the initiators and started designing of the [Tsinghua University Satellite Simulator (THUSS)](https://haoguangyang.github.io/2016/09/01/THUSS-Tsinghua-University-Satellite-Simulator)|
  |2015.8| First delivery of the THUSS products, profits are collected to estabilsh Fund for Scintific Research among TEEP Students|
