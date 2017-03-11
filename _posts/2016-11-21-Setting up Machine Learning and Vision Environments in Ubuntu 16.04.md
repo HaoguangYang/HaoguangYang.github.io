@@ -1,7 +1,7 @@
 ---
 layout: post
 category: Blogs
-title: Ubuntu 16.04 配置机器学习环境
+title: Setting up Machine Learning and Vision Environments in Ubuntu 16.04.
 tagline: by Yang
 tags: 
   - Setup
