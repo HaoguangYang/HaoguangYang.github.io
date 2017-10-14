@@ -3,7 +3,7 @@ layout: post
 title: THUSS - Tsinghua University Satellite Simulator
 tags:
   - THUSS
-category: Publications
+category: Press Release
 ---
 ## About THUSS
 

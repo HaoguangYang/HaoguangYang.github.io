@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Publications
+category: Press Release
 title: Meet Agile Vehicle on 45th International Exhibition of Inventions
 tags: 
   - Agile Vehicle
