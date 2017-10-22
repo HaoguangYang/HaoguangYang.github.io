@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Press Release
+category: Press-Release
 title: Meet Agile Vehicle on 45th International Exhibition of Inventions
 tags: 
   - Agile Vehicle
@@ -12,7 +12,7 @@ Agile Vehicle is a prototype of the future automobile developed by us. This is a
 
 <!--more-->
 
-It is implemented with fancy novel design of the suspension system that allow it to handle rough driving conditions and absorb impacts from all directions. Its complicated dynamic control algorithm is also a highlight of the project, which expanded its degree of freedom and ensured its smoothness in doing fancy maneuverings such as side-slid-in parking, asynchronous steering, and pinpoint steering, and the transition from one mode to another. With automatic driving integrated into the system, I believe it would be a brand new world for the whole automobile industry.
+It is implemented with fancy novel design of the suspension system that allow it to handle rough driving conditions and absorb impacts from all directions. Its complicated dynamic control algorithm is also a highlight of the project, which expanded its degree of freedom and ensured its smoothness in doing fancy maneuverings such as side-slid-in parking, asynchronous steering, and pinpoint steering, and the transition from one mode to another. With intuitive human-in-the-loop augmented driving integrated into the system, I believe it would be a brand new world for the whole automobile industry.
 
 **Silver Medal of the 45th International Exhibition of Inventions of Geneva**
 
