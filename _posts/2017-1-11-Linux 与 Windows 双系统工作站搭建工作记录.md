@@ -1,12 +1,10 @@
 ---
 layout: post
-category: Blogs
+category: SetupLog
 title: Linux 与 Windows 双系统工作站搭建工作记录
 tagline: by Yang
 tags: 
-  - Setup
-  - Dual-Boot
-published: true
+  - Linux
 ---
 
 本工作站作为医学影像的机器视觉服务器使用，同时兼顾科学计算和部分实验室娱乐的需求，采用如下配置：

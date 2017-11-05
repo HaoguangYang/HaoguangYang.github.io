@@ -1,13 +1,14 @@
 ---
 layout: post
-category: Blogs
+category: SetupLog
 title: Setting up Machine Learning and Vision Environments in Ubuntu 16.04.
 tagline: by Yang
 tags: 
-  - Setup
-  - Ubuntu
+  - OpenCV
+  - TensorFlow
+  - Torch
+  - Linux
   - Agile Vehicle
-published: true
 ---
 
 This workstation is used as the on-board computer of the Agile Vehicle project, featuring the processing of various vehicle dynamic algorithms and computer vision issues for autopilot. 

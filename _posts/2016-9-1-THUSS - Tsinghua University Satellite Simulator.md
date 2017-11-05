@@ -4,8 +4,13 @@ title: THUSS - Tsinghua University Satellite Simulator
 tags:
   - THUSS
 category: Press-Release
+published: true
 ---
-## About THUSS
+
+**THUSS** : Physical simulation of rendezvous and docking of spacecraft on desktop.
+
+
+## About The Project
 
 This is an international programme launched by a team of undergraduates of Tsinghua University (Microsat Group), which features on the development of miniaturized physical simulation platforms for satellites in space. The project was launched on December 2014, driven by the interest of Prof. Zhong Hong (George) Zhu from York University for finding such satellite simulator platforms small in size. We developed a prototype of the machine on April 2015 under the guidance of Mr. Hongxiang Yao, PhD. student of Tsinghua University, who has previous experiences of building such systems but is much larger in size and meavier in weight. In the following months we mianly concentrated on refining the prototype, designing electronic interfaces, optimizing installation positions of payloads and configuring control softwares, which are mainly done by we undergraduates.
 
@@ -25,9 +30,10 @@ I would also like to thank our hardware customers hereby, including York Univers
 
 ## Publications
 
-[Implementation of three DoFs small satellite ground simulation system] (http://arc.aiaa.org/doi/abs/10.2514/6.2016-0697)
+1. [Implementation of three DoFs small satellite ground simulation system] (http://arc.aiaa.org/doi/abs/10.2514/6.2016-0697)
+2. [Physical simulation system for satellite] (https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/660ac1e56223217c2c7a/CN105204373A.pdf)
 
-Please cite this paper if it helps:
+Citation Information:
 
 ```tex
 @Inbook{Yao2016,
@@ -48,6 +54,15 @@ publisher={American Institute of Aeronautics and Astronautics},
 note={0},
 doi={10.2514/6.2016-0697},
 url={http://dx.doi.org/10.2514/6.2016-0697}
+}
+
+@misc{2015physical,
+  title={Physical simulation system for satellite},
+  url={https://encrypted.google.com/patents/CN105204373A?cl=en},
+  year={2015},
+  month=dec # "~30",
+  publisher={Google Patents},
+  note={CN Patent App. CN 201,510,680,932}
 }
 ```
 
