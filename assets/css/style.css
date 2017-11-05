@@ -1765,11 +1765,11 @@ border-radius:3.4375em;
 transition:transform 2s ease-out;
 }
 .author:hover
-{-webkit-transform:rotateZ(360deg);
--moz-transform:rotateZ(360deg);
--o-transform:rotateZ(360deg);
--ms-transform:rotateZ(360deg);
-transform:rotateZ(360deg)}
+{-webkit-transform:scale(1.05,1.05);
+-moz-transform:scale(1.05,1.05);
+-o-transform:scale(1.05,1.05);
+-ms-transform:scale(1.05,1.05);
+transform:scale(1.05,1.05)}
 @media only screen and (min-width:768px)
 {.author
 {position:absolute;
