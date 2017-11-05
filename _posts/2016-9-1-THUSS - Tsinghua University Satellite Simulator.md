@@ -10,11 +10,11 @@ published: true
 **THUSS** : Physical simulation of rendezvous and docking of spacecraft on desktop.
 
 
+<!--more-->
+
 ## About The Project
 
 This is an international programme launched by a team of undergraduates of Tsinghua University (Microsat Group), which features on the development of miniaturized physical simulation platforms for satellites in space. The project was launched on December 2014, driven by the interest of Prof. Zhong Hong (George) Zhu from York University for finding such satellite simulator platforms small in size. We developed a prototype of the machine on April 2015 under the guidance of Mr. Hongxiang Yao, PhD. student of Tsinghua University, who has previous experiences of building such systems but is much larger in size and meavier in weight. In the following months we mianly concentrated on refining the prototype, designing electronic interfaces, optimizing installation positions of payloads and configuring control softwares, which are mainly done by we undergraduates.
-
-<!--more-->
 
 In late June 2015 the first set of hardwares arrived and we started the assembly of the simulators. The saaembly and testing work continued until late July, when we are finally ready to deliver our first generation model of product, THUSS-2, to our customers. The system is approximately 40x40x35cm in size and 20kg in weight, with a gridded screw-hole top for extendability. Typical usage for such systems would be rendezvous and docking experiments with 3 to 4 DOFs. The system is also capable of testing control algorithms for orbital guidance, navigation, and control.
 

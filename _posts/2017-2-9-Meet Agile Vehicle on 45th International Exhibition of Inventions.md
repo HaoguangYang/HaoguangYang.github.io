@@ -3,7 +3,7 @@ layout: post
 category: Press-Release
 title: Meet Agile Vehicle on 45th International Exhibition of Inventions
 tags: 
-  - Agile Vehicle
+  - AgileVehicle
 published: true
 ---
 
@@ -33,7 +33,12 @@ This invention aims to provide a novel smart electric vehicle. It has completely
 
 ## Awards
 
- **Silver Medal of the 45th International Exhibition of Inventions of Geneva**
+ * **Silver Medal of the 45th International Exhibition of Inventions of Geneva**
+ * First Prize, Open Research for Innovative Challenges, Tsinghua University (China)
+
+## Intellectual Property
+
+ * PRC Patent: 201610884289.7；201610517146.2
 
 ## Gallery
 
@@ -42,6 +47,6 @@ This invention aims to provide a novel smart electric vehicle. It has completely
 Here is the demo video shown in the Exhibition.
 <iframe src="https://drive.google.com/file/d/0B1O0PXNvYU6tYy1BR3NNLU5TQlE/preview" width="640" height="480"></iframe>
 
-### About
+## About
 
 [Inventions Geneva](http://www.inventions-geneva.ch/en/)
