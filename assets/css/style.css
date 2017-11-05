@@ -1746,7 +1746,7 @@ margin:0 auto;
 {#footer .line span
 {position:absolute;
 left:3em;
-margin:0 0 1.5em}
+margin:0 0.45em 1.5em}
 }
 .author
 {width:6.875em;
@@ -1758,11 +1758,11 @@ background:no-repeat url("../img/author.jpg") left top;
 background-size:6.875em 6.875em;
 -webkit-border-radius:3.4375em;
 border-radius:3.4375em;
--webkit-transition:-webkit-transform 2s ease-out;
--moz-transition:-moz-transform 2s ease-out;
--o-transition:-o-transform 2s ease-out;
--ms-transition:-ms-transform 2s ease-out;
-transition:transform 2s ease-out;
+-webkit-transition:-webkit-transform 1s ease-out;
+-moz-transition:-moz-transform 1s ease-out;
+-o-transition:-o-transform 1s ease-out;
+-ms-transition:-ms-transform 1s ease-out;
+transition:transform 1s ease-out;
 }
 .author:hover
 {-webkit-transform:scale(1.05,1.05);
@@ -1774,7 +1774,7 @@ transform:scale(1.05,1.05)}
 {.author
 {position:absolute;
 top:6em;
-margin:0 0 1.5em}
+margin:0 0.5em 1.5em}
 }
 .info
 {font-family:"slabo27px";
