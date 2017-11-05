@@ -30,8 +30,8 @@ I would also like to thank our hardware customers hereby, including York Univers
 
 ## Publications
 
-1. [Implementation of three DoFs small satellite ground simulation system] (http://arc.aiaa.org/doi/abs/10.2514/6.2016-0697)
-2. [Physical simulation system for satellite] (https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/660ac1e56223217c2c7a/CN105204373A.pdf)
+1. [Implementation of three DoFs small satellite ground simulation system](http://arc.aiaa.org/doi/abs/10.2514/6.2016-0697)
+2. [Physical simulation system for satellite](https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/660ac1e56223217c2c7a/CN105204373A.pdf)
 
 Citation Information:
 
