@@ -38,11 +38,13 @@ This invention aims to provide a novel smart electric vehicle. It has completely
 
 ## Intellectual Property
 
- * PRC Patent: 201610884289.7；201610517146.2
+ * PRC Patent: 201710313082.9; 201610517146.2
 
 ## Gallery
 
 ![Kiss the land](https://raw.githubusercontent.com/HaoguangYang/HaoguangYang.github.io/master/assets/media/AgileV-proto.jpg)
+
+![Meeting Mayor of Geneva](https://raw.githubusercontent.com/HaoguangYang/HaoguangYang.github.io/master/assets/media/_PAL5628.jpg)
 
 Here is the demo video shown in the Exhibition.
 <iframe src="https://drive.google.com/file/d/0B1O0PXNvYU6tYy1BR3NNLU5TQlE/preview" width="640" height="480"></iframe>
