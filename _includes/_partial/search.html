@@ -1,8 +1,8 @@
 {% if site.google_cse.enable %}
 <div  id="main" class="page">
-  <div id='cse' style='width:100%;text-align:center'>{{ lang.search-load }}</div>
-  <!--Google Search Engine Embedded
-<script>
+  <!--Google Search Engine Embedded-->
+  <div id='cse' style='width:100%;text-align:center'>
+  <script>
   (function() {
     var cx = '{{ site.google_cse.cx }}';
     var gcse = document.createElement('script');
@@ -11,24 +11,11 @@
     gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
--->
+    })();
+  </script>
+  <gcse:search></gcse:search>
+  </div>
+<!--<div id='cse' style='width:100%;text-align:center'>{{ lang.search-load }}</div>-->
 </div>
-
-<script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-google.load('search', '1', {language : 'en-US',style: google.loader.themes.MINIMALIST});
-google.setOnLoadCallback(function() {
-    var cx = '{{ site.google_cse.cx }}';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  },true);
-</script>
 
 {% endif %}
