@@ -8,7 +8,7 @@ tags:
   - TensorFlow
   - Torch
   - Linux
-  - Agile Vehicle
+  - AgileVehicle
 ---
 
 This workstation is used as the on-board computer of the Agile Vehicle project, featuring the processing of various vehicle dynamic algorithms and computer vision issues for autopilot. 
