@@ -57,7 +57,7 @@
 		 -->
 		  <div class="cc-license">
           <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" class="cc-opacity" target="_blank">
-            <img src="{{ site.root }}assets/img/cc-by-nc-nd.svg" alt="Creative Commons" />
+            <img src="{{ site.assets }}/img/cc-by-nc-nd.svg" alt="Creative Commons" />
           </a>
         </div>
      
@@ -66,9 +66,9 @@
 		<p class="copyright">
 		Powered by <a href="http://jekyllrb.com" target="_blank" title="jekyll">jekyll</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
 		{% if site.author.name %}
-		<a href="{{ site.root }}about" target="_blank" title="{{ site.author.name }}">{{ site.author.name }}</a>
+		<a href="{{ site.baseurl }}about" target="_blank" title="{{ site.author.name }}">{{ site.author.name }}</a>
 		{% else %}
-		<a href="{{ site.root }}" title="{{ site.title }}">{{ site.title }}</a>
+		<a href="{{ site.baseurl }}" title="{{ site.title }}">{{ site.title }}</a>
 		{% endif %}
 		
 		</p>
