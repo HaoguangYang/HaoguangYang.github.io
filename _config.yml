@@ -39,7 +39,7 @@ paginate: 10
 title :  John's Online Studio
 tagline: With The Future Lab, Robotics Co-op with Tsien's Excellence in Education Programme (TEEP). We make ideas work.
 assets: /assets
-baseurl: haoguangyang.github.io
+baseurl: 
 
 #### Language
 language: en    ## blog site languages: en, zh-CN, zh-TW
