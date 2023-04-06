@@ -1,5 +1,5 @@
 ---
-title: "Posts by Year"
+title: "Most Recent Activities"
 permalink: /posts/
 layout: posts
 author_profile: true
