@@ -1,6 +1,6 @@
 ---
 title: Development and Control of Four-Wheel Independent Driving and Modular Steering Electric Vehicles for Improved Maneuverability Limits
-last_modified_at: 2019-04-02T12:00:00-05:00
+last_modified_at: 2019-04-02T12:00:00-04:00
 excerpt_separator: "<!--more-->"
 categories:
   - Publications

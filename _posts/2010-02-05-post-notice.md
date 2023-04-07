@@ -5,7 +5,7 @@ categories:
 tags:
   - Post Formats
   - notice
-hidden: true
+published: false
 ---
 
 A notice displays information that explains nearby content. Often used to call attention to a particular detail.
