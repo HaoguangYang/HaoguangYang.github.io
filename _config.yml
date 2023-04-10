@@ -111,3 +111,14 @@ category_archive:
 tag_archive:
   type: liquid
   path: /keywords/
+
+repository: HaoguangYang/HaoguangYang.github.io
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : MDEwOlJlcG9zaXRvcnk2NzAwNTk0MQ== # Shown during giscus setup at https://giscus.app
+    category_name        : Announcements # Full text name of the category
+    category_id          : DIC_kwDOA_5t9c4CVqDT # Shown during giscus setup at https://giscus.app
+    discussion_term      : pathname # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
+    theme                : dark # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
